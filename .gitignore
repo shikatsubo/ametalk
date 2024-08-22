@@ -49,3 +49,6 @@ Thumbs.db
 
 #python bytecode cache, for some plugins.
 *.pyc
+
+/Assets/DownloadAssets/*
+/Assets/DownloadAssets.meta
