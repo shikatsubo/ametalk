@@ -6,7 +6,7 @@ using UnityEngine;
 /// ステージギミック：隠し壁
 /// 主役が通ってほしくない場所に設置する
 /// </summary>
-public class Gimmic_HiddenWall : MonoBehaviour
+public class Gimmic_Hidden : MonoBehaviour
 {
     // Start
     void Start()
