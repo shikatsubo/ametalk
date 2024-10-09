@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 2023842584229499191}
   - component: {fileID: 1959823641827292564}
   - component: {fileID: 6065458392822411934}
+  - component: {fileID: 4042527374608829071}
   m_Layer: 0
   m_Name: Jump
   m_TagString: Untagged
@@ -145,3 +146,25 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   JumpPower: 5
+--- !u!95 &4042527374608829071
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 804417727509479056}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
