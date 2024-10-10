@@ -49,6 +49,8 @@ public class Shuyaku_Kari : MonoBehaviour
     bool isJumping;
     bool doubleJump;
 
+    [Header("ダメージ量")]
+    public int damageAmount = 1;
     void Start()
     {
         // Rigidbody2DとAnimatorの取得
@@ -212,13 +214,6 @@ public class Shuyaku_Kari : MonoBehaviour
         }
     }
 
-    // 敵を踏んだ場合の処理
-    private void StompOnEnemy()
-    {
-        rb.velocity = new Vector2(rb.velocity.x, stompJumpForce); // 少しジャンプさせる
-        anim.SetTrigger("Jump"); // ジャンプアニメーション再生
-    }
-
     // 敵にヒットされた場合の処理
     public void Hit(int damage)
     {
@@ -250,6 +245,26 @@ public class Shuyaku_Kari : MonoBehaviour
         isInvincible = true;
         yield return new WaitForSeconds(invincibilityTime); // 無敵時間を待つ
         isInvincible = false;
+    }
+
+    // 敵を踏んだ場合の処理
+    private void StompOnEnemy()
+    {
+        rb.velocity = new Vector2(rb.velocity.x, stompJumpForce); // 少しジャンプさせる
+        anim.SetTrigger("Jump"); // ジャンプアニメーション再生
+    }
+    private void StompOnEnemy(Collider2D collision)
+    {
+        string tag = collision.gameObject.tag;
+        Enemy_base enemy = collision.gameObject.GetComponent<Enemy_base>();
+        enemy.Damaged(damageAmount);
+    }
+    private void OnCollisionStay2D (Collision2D collision)
+    {
+        string tag = collision.gameObject.tag;
+            Enemy_base enemy = collision.gameObject.GetComponent<Enemy_base>();
+            enemy.Damaged(damageAmount);
+        
     }
 }
 

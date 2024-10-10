@@ -21,7 +21,7 @@ public class EnemyBodyAttack : MonoBehaviour
     {
         string tag = collision.gameObject.tag;
 
-        if (tag == "Shuyaku")
+        if (tag == "Player")
         {
             enemy_base.BodyAttack (collision.gameObject);
         }
