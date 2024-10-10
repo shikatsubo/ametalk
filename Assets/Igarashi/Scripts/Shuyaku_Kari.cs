@@ -29,6 +29,9 @@ public class Shuyaku_Kari : MonoBehaviour
     //無敵状態かどうか
     private bool isInvincible = false;
 
+    //カメラ制御クラス
+    public CameraController cameraController;
+
     private Animator anim = null;
 
     // ジャンプに関連する変数
@@ -52,6 +55,9 @@ public class Shuyaku_Kari : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
         vecGavity = new Vector2(0, -Physics2D.gravity.y);
+
+        //カメラ初期位置
+        cameraController.SetPosition (transform.position);
     }
 
     void Update()
@@ -90,6 +96,9 @@ public class Shuyaku_Kari : MonoBehaviour
 
             rb.velocity += vecGavity * currentJumpM * Time.deltaTime;
         }
+
+        //カメラに自身の座標を渡す
+        cameraController.SetPosition (transform.position);
     }
 
     #region//歩行とダッシュの詳細
