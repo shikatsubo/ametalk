@@ -934,11 +934,11 @@ PlayerSettings:
   apiCompatibilityLevel: 6
   activeInputHandler: 0
   windowsGamepadBackendHint: 0
-  cloudProjectId: 7801fc9d-0bc2-49a1-82a0-216f54eee513
+  cloudProjectId: f518c97a-32c1-4ba3-9ca3-38c08c123f7e
   framebufferDepthMemorylessMode: 0
   qualitySettingsNames: []
   projectName: ametalk-1
-  organizationId: unity_833b60ec2d5044594a14
+  organizationId: wushilanha941
   cloudEnabled: 0
   legacyClampBlendShapeWeights: 0
   hmiLoadingImage: {fileID: 0}
