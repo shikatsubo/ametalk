@@ -13,7 +13,7 @@ public class Gimmic_Jump : MonoBehaviour
     private void OnTriggerStay2D(Collider2D collision)
      {
        //接しているのが主役の設置判定オブジェクトでない場合は終了
-       Hanteikun hanteikun = collision.gameObject.GetComponent<Hanteikun> ();
+       Hanteikunnnomanual hanteikun = collision.gameObject.GetComponent<Hanteikunnnomanual> ();
        if (hanteikun == null)
        return;
 

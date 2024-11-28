@@ -4,5 +4,24 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/DownloadAssets/ametalk-hotohara/Assets/Tsuboi/StartScene.unity
+    guid: 087cfbe34c578b847a99278f66cc3cd8
+  - enabled: 1
+    path: Assets/Igarashi/Stage1.unity
+    guid: 1f2d3b8c2bff0314e8e63f71dd5738d3
+  - enabled: 1
+    path: Assets/DownloadAssets/ametalk-hotohara/Assets/Tsuboi/Ametalkclub.unity
+    guid: 9a8c38a40d63971428e7dee65ea8445e
+  - enabled: 1
+    path: Assets/Igarashi/GameClear.unity
+    guid: 3edc3acc9867451498188634ebb32399
+  - enabled: 1
+    path: Assets/Igarashi/GameOver.unity
+    guid: 96270b5b92c080748bfee08f7bd6349a
+  - enabled: 1
+    path: Assets/DownloadAssets/ametalk-hotohara/Assets/Tsuboi/Manual.unity
+    guid: d5bc4c97436c25748b01dc3dd5262d0c
   m_configObjects: {}
+  m_UseUCBPForAssetBundles: 0
